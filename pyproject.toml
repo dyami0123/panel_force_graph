@@ -8,11 +8,11 @@ authors = [
 ]
 requires-python = ">=3.10,<3.12"
 dependencies = [
-    "panel"
+    "panel",
 ]
+
+[tool.setuptools.package-data]
+"force_graph_panel" = ["**/*.js"]
 
 [tool.setuptools.packages.find]
 where = ["python"]
-
-[tool.setuptools.package_data]
-"force_graph_panel" = ["**/*.js"]
