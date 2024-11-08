@@ -8,12 +8,21 @@ authors = [
 ]
 requires-python = ">=3.10,<3.12"
 dependencies = [
-    "panel",
+    "panel==1.5.0",
     "loguru",
+]
+
+[project.optional-dependencies]
+dev = [
+    "build",
+    "twine"
+]
+
+[tool.setuptools]
+packages = [
+    "force_graph_panel"
 ]
 
 [tool.setuptools.package-data]
 "force_graph_panel" = ["**/*.js"]
 
-[tool.setuptools.packages.find]
-where = ["python"]

@@ -15,7 +15,7 @@ async function startApplication() {
   self.pyodide.globals.set("sendPatch", sendPatch);
   console.log("Loaded!");
   await self.pyodide.loadPackage("micropip");
-  const env_spec = ['https://cdn.holoviz.org/panel/wheels/bokeh-3.5.2-py3-none-any.whl', 'https://cdn.holoviz.org/panel/1.5.0/dist/wheels/panel-1.5.0-py3-none-any.whl', 'pyodide-http==0.2.1', 'force_graph_panel']
+  const env_spec = ['https://cdn.holoviz.org/panel/wheels/bokeh-3.5.2-py3-none-any.whl', 'https://cdn.holoviz.org/panel/1.5.0/dist/wheels/panel-1.5.0-py3-none-any.whl', 'pyodide-http==0.2.1', 'https://github.com/dyami0123/panel_force_graph/raw/refs/heads/main/test_wheels/force_graph_panel-0.0.1-py3-none-any.whl']
   for (const pkg of env_spec) {
     let pkg_name;
     if (pkg.endsWith('.whl')) {
