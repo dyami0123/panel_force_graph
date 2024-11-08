@@ -1,0 +1,18 @@
+
+[project]
+name = "force_graph_panel"
+version = "0.0.1"
+description = "Graph visualization with force-directed layout in Python"
+authors = [
+    { name="Dyami Andrews", email="dyamiand@gmail.com" }
+]
+requires-python = ">=3.10,<3.12"
+dependencies = [
+    "panel"
+]
+
+[tool.setuptools.packages.find]
+where = ["python"]
+
+[tool.setuptools.package_data]
+"force_graph_panel" = ["**/*.js"]
